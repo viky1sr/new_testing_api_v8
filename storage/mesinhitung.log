@@ -1,0 +1,12 @@
+{"id":"619e204a7c172","command":"add","operation":"+","input":["45","22"],"result":67}
+{"id":"619e20553c43d","command":"add","operation":"+","input":["45","25"],"result":70}
+{"id":"619e20ce8f2e1","command":"add","operation":"+","input":["45","25"],"result":70}
+{"id":"619e20f462a01","command":"add","operation":"+","input":["45","25"],"result":70}
+{"id":"619e21444867a","command":"add","operation":"+","input":["45","25"],"result":70}
+{"id":"619e21ce5ad6c","command":"add","operation":"+","input":["45","25"],"result":70}
+{"id":"619e22970943f","command":"add","operation":"+","input":["45","22"],"result":67}
+{"id":"619e38154d28b","command":"add","operation":"+","input":["11","1"],"result":12}
+{"id":"619e3b0632a79","command":"subtract","operation":"-","input":["11","2"],"result":9}
+{"id":"619e3b0633975","command":"subtract","operation":"-","input":["11","2"],"result":9}
+{"id":"619e3b40ebb96","command":"subtract","operation":"-","input":["11","5"],"result":6}
+{"id":"619e3d4e2b080","command":"power","operation":"^","input":["3","5"],"result":243}

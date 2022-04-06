@@ -1,0 +1,107 @@
+POST http://127.0.0.1:8000/api/v1/login
+Content-Type: application/json
+
+{
+    "email" : "admin@demo.com",
+    "password": "qweasd123"
+}
+
+###
+
+POST http://127.0.0.1:8000/api/v1/logout
+Content-Type: application/json
+
+{
+    "email" : "admin@demo.com",
+    "password": "qweasd123"
+}
+
+###
+
+POST http://127.0.0.1:8000/api/v1/register
+Content-Type: application/json
+
+{
+    "name" : "testing",
+    "email" : "admin@demo.com",
+    "password": "qweasd123",
+    "password_confirmation": "qweasd123"
+}
+
+###
+# Customer update as admin
+POST http://127.0.0.1:8000/api/v1/customer/1
+Content-Type: application/json
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC8xMjcuMC4wLjE6ODAwMFwvYXBpXC92MVwvbG9naW4iLCJpYXQiOjE2Mzc0MDY1MjcsImV4cCI6MTY0MjU5MDUyNywibmJmIjoxNjM3NDA2NTI3LCJqdGkiOiJDMUh6a0dtSnJwTlZ6ajFnIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.oCrypxHXbPWL1LtSlmwFBTjkE9z26yEkJClJ97s_OPA
+
+
+{
+    "name" : "testing",
+    "email" : "admin@demo.com",
+    "password": "qweasd123",
+    "password_confirmation": "qweasd123"
+}
+
+###
+# Customer get by id as admin
+GET http://127.0.0.1:8000/api/v1/customer/1
+Content-Type: application/json
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC8xMjcuMC4wLjE6ODAwMFwvYXBpXC92MVwvbG9naW4iLCJpYXQiOjE2Mzc0MDY1MjcsImV4cCI6MTY0MjU5MDUyNywibmJmIjoxNjM3NDA2NTI3LCJqdGkiOiJDMUh6a0dtSnJwTlZ6ajFnIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.oCrypxHXbPWL1LtSlmwFBTjkE9z26yEkJClJ97s_OPA
+
+###
+# Customer get all  as admin
+GET http://127.0.0.1:8000/api/v1/customer
+Content-Type: application/json
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC8xMjcuMC4wLjE6ODAwMFwvYXBpXC92MVwvbG9naW4iLCJpYXQiOjE2Mzc0MDY1MjcsImV4cCI6MTY0MjU5MDUyNywibmJmIjoxNjM3NDA2NTI3LCJqdGkiOiJDMUh6a0dtSnJwTlZ6ajFnIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.oCrypxHXbPWL1LtSlmwFBTjkE9z26yEkJClJ97s_OPA
+
+###
+# Customer delete id as admin
+DELETE http://127.0.0.1:8000/api/v1/customer/2
+Content-Type: application/json
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC8xMjcuMC4wLjE6ODAwMFwvYXBpXC92MVwvbG9naW4iLCJpYXQiOjE2Mzc0MDY1MjcsImV4cCI6MTY0MjU5MDUyNywibmJmIjoxNjM3NDA2NTI3LCJqdGkiOiJDMUh6a0dtSnJwTlZ6ajFnIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.oCrypxHXbPWL1LtSlmwFBTjkE9z26yEkJClJ97s_OPA
+
+
+###
+# Create product role as Admin
+POST http://127.0.0.1:8000/api/v1/products
+Content-Type: application/json
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC8xMjcuMC4wLjE6ODAwMFwvYXBpXC92MVwvbG9naW4iLCJpYXQiOjE2NDkyMzQ4MjYsImV4cCI6MTY1NDQxODgyNiwibmJmIjoxNjQ5MjM0ODI2LCJqdGkiOiIyTVF2c2Y0cjFXT1lCTEpmIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.-_8zZ2iBbgtilhcUabzco4fUqaFH5vZClab5FqVpAPE
+
+{
+    "title" : "Telkomsel 30Gb",
+    "category": "paket data",
+    "deposit" : 5000000,
+    "price" : 150000
+}
+
+###
+
+# Update product role as Admin
+POST http://127.0.0.1:8000/api/v1/products/1
+Content-Type: application/json
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC8xMjcuMC4wLjE6ODAwMFwvYXBpXC92MVwvbG9naW4iLCJpYXQiOjE2Mzc0MDY1MjcsImV4cCI6MTY0MjU5MDUyNywibmJmIjoxNjM3NDA2NTI3LCJqdGkiOiJDMUh6a0dtSnJwTlZ6ajFnIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.oCrypxHXbPWL1LtSlmwFBTjkE9z26yEkJClJ97s_OPA
+
+{
+"title" : "Paket Internet 65Gb update",
+"category": "paket data update",
+"deposit" : 5000000,
+"price" : 150000
+}
+
+###
+# Get By ID product role as Admin
+GET http://127.0.0.1:8000/api/v1/products/1
+Content-Type: application/json
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC8xMjcuMC4wLjE6ODAwMFwvYXBpXC92MVwvbG9naW4iLCJpYXQiOjE2Mzc0MDY1MjcsImV4cCI6MTY0MjU5MDUyNywibmJmIjoxNjM3NDA2NTI3LCJqdGkiOiJDMUh6a0dtSnJwTlZ6ajFnIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.oCrypxHXbPWL1LtSlmwFBTjkE9z26yEkJClJ97s_OPA
+
+###
+# Get all product role as Admin
+    GET http://127.0.0.1:8000/api/v1/products
+Content-Type: application/json
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC8xMjcuMC4wLjE6ODAwMFwvYXBpXC92MVwvbG9naW4iLCJpYXQiOjE2NDkyMzQ4MjYsImV4cCI6MTY1NDQxODgyNiwibmJmIjoxNjQ5MjM0ODI2LCJqdGkiOiIyTVF2c2Y0cjFXT1lCTEpmIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.-_8zZ2iBbgtilhcUabzco4fUqaFH5vZClab5FqVpAPE
+
+###
+# Delete product role as Admin (on cascade delete)
+DELETE http://127.0.0.1:8000/api/v1/products/1
+Content-Type: application/json
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC8xMjcuMC4wLjE6ODAwMFwvYXBpXC92MVwvbG9naW4iLCJpYXQiOjE2Mzc0MDY1MjcsImV4cCI6MTY0MjU5MDUyNywibmJmIjoxNjM3NDA2NTI3LCJqdGkiOiJDMUh6a0dtSnJwTlZ6ajFnIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.oCrypxHXbPWL1LtSlmwFBTjkE9z26yEkJClJ97s_OPA
