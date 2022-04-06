@@ -29,7 +29,6 @@ class ProductServices {
         $product = $this->getById($id);
         $product['title'] = $inputs['title'];
         $product['category'] = $inputs['category'];
-        $product['deposit'] = $inputs['deposit'];
         $product['price'] = $inputs['price'];
 
         return $product->save();
